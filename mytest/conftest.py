@@ -5,7 +5,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 
-@@pytest.fixture
+@pytest.fixture
 def driver():
     options = Options()
     options.add_argument("--headless")
