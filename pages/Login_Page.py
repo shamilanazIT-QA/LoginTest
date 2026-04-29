@@ -4,6 +4,7 @@ from pages.base import BasePage
 class LoginPage(BasePage):
     user_name =(By.ID, 'username')
     password =(By.ID, 'password')
+    # Change btton to button
     login_button = (By.XPATH, "//button[@type='submit' and text()='Login']")
 
     def pass_keys(self, username_text, password_text):
