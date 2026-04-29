@@ -5,7 +5,7 @@ class LoginPage(BasePage):
     user_name =(By.ID, 'username')
     password =(By.ID, 'password')
     # Change btton to button
-    login_button = (By.XPATH, "//button[@type='submit' and text()='Login']")
+    login_button = (By.XPATH, "//button[@type='submit' and contains(., 'Login')]")
 
     def pass_keys(self, username_text, password_text):
         self.type(self.user_name, username_text)
