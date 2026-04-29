@@ -2,7 +2,7 @@
 from pages.Login_Page import LoginPage  # Make sure this import is correct
 
 
-def test_valid_login(driver):  # 'driver' here comes from your fixture in driver_test.py
+def test_valid_login(driver):  # 'driver' here comes from your fixture in conftest.py
     login_pg = LoginPage(driver)
     driver.get("https://the-internet.herokuapp.com/login")
 
