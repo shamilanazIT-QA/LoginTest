@@ -34,3 +34,11 @@ The framework automates the login functionality of a web application, ensuring t
 │   ├── conftest.py     # Driver setup & fixtures
 │   └── login_test.py   # Functional test cases
 └── README.md           # Project documentation
+##  Problem Solving (The "Detective" Work)
+During development, I resolved several critical automation challenges:
+
+## Cross-Platform Drivers: Configured the framework to handle path differences between Windows (Local) and Linux (GitHub Actions).
+
+## Dynamic Elements: Fixed TimeoutExceptions by refactoring XPaths from exact text matches to more robust contains() logic.
+
+## CI/CD Pipeline: Successfully configured PYTHONPATH and headless Chrome options to allow tests to run in a cloud environment.
