@@ -1,4 +1,5 @@
-Project Overview
+Selenium POM Automation Framework
+📌 Project Overview
 This repository contains a Page Object Model (POM) based automation suite for testing web applications. The framework is designed for scalability and maintainability, separating the page logic from the test scripts.
 
 The current suite focuses on the Login Functionality of the Herokuapp test site, handling edge cases like invalid characters and successful authentication.
