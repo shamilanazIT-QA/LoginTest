@@ -1,45 +1,36 @@
-Selenium POM Automation Framework
-📌 Project Overview
-This repository contains a Page Object Model (POM) based automation suite for testing web applications. The framework is designed for scalability and maintainability, separating the page logic from the test scripts.
+# 🌐 Selenium POM Automation Framework
 
-The current suite focuses on the Login Functionality of the Herokuapp test site, handling edge cases like invalid characters and successful authentication.
+## 📌 Project Overview
+This repository contains a professional **Page Object Model (POM)** automation suite. It is designed to demonstrate clean code practices, maintainability, and full integration with a **CI/CD pipeline**.
 
-🛠️ Tech Stack
-Language: Python 3.10+
+The framework automates the login functionality of a web application, ensuring that the authentication flow works correctly across different environments.
 
-Core Library: Selenium WebDriver
+---
 
-Test Runner: Pytest
+## 🚀 Key Features
+*   **Page Object Model (POM):** Enhances code reusability by separating page-specific locators from test logic.
+*   **CI/CD Integration:** Fully automated test execution using **GitHub Actions** on every code push.
+*   **Headless Execution:** Optimized to run on cloud servers (Ubuntu) without a graphical interface.
+*   **Explicit Waits:** Implemented `WebDriverWait` to handle dynamic elements and prevent "flaky" tests.
 
-Pattern: Page Object Model (POM)
+---
 
-CI/CD: GitHub Actions (Ubuntu-latest)
+## 🛠️ Tech Stack
+*   **Language:** Python 3.10
+*   **Automation:** Selenium WebDriver
+*   **Test Runner:** Pytest
+*   **CI/CD:** GitHub Actions
+*   **Environment:** Linux (GitHub Runner) & Windows (Local)
 
-🏗️ Framework Structure
-The project is organized to follow industry standards for clean code:
+---
 
-Plaintext
-├── .github/workflows/  # CI/CD pipeline (YAML)
-├── pages/              # Page Objects
-│   ├── base.py         # Base Page with reusable Selenium methods
-│   └── Login_Page.py   # Locators and actions for the Login page
-├── mytest/             # Test Suite
-│   ├── conftest.py     # Fixtures (Driver setup/teardown)
-│   └── login_test.py   # Actual test cases
-└── report.xml          # Automated test execution reports
-🚀 Key Features
-Automated CI/CD: Tests run automatically on every push or pull_request to the master branch using GitHub Actions.
-
-Headless Execution: Configured to run in headless mode for efficient server-side testing.
-
-Explicit Waits: Utilizes WebDriverWait for stable element interaction and synchronization.
-
-Scalable POM: Easy to add new pages by extending the BasePage class.
-Challenges & Solutions
-Issue: Environment mismatch between local Windows and GitHub Linux servers.
-
-Solution: Implemented flexible Chrome Options and PYTHONPATH environment variables to ensure seamless execution in both environments.
-
-Issue: Unstable XPaths due to dynamic web elements.
-
-Solution: Refactored locators to use contains() functions for more robust element finding.
+## 🏗️ Project Structure
+```text
+├── .github/workflows/  # CI/CD configuration (test.yml)
+├── pages/              # Page Object classes
+│   ├── base.py         # Reusable Selenium wrappers
+│   └── Login_Page.py   # Locators & actions for Login
+├── mytest/             # Test scripts
+│   ├── conftest.py     # Driver setup & fixtures
+│   └── login_test.py   # Functional test cases
+└── README.md           # Project documentation
